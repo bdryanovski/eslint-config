@@ -17,9 +17,7 @@ In your `eslint.config.js`
 ```js
 import myConfig from '@dryanovski/eslint-config';
 
-export default {
-  ...myConfig[0],
-};
+export default [...myConfig];
 ```
 
 Then run `pnpm eslint .` or `npm eslint .`.

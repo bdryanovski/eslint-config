@@ -1,10 +1,14 @@
 {
   "name": "@dryanovski/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.23",
   "description": "ESLint config with opinion",
   "author": "Bozhidar Dryanovski <bozhidar.dryanovski@gmail.com>",
   "main": "index.js",
-  "keywords": [],
+  "keywords": [
+    "eslint",
+    "typescript",
+    "eslint-configuration"
+  ],
   "license": "MIT",
   "type": "module",
   "dependencies": {

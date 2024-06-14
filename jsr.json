@@ -1,0 +1,5 @@
+{
+  "name": "@dryanovski/eslint-config",
+  "version": "1.0.22",
+  "exports": "./index.js"
+}

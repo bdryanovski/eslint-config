@@ -1,0 +1,52 @@
+{
+  "name": "@dryanovski/eslint-config",
+  "version": "1.0.3",
+  "description": "ESLint config with opinion",
+  "author": "Bozhidar Dryanovski <bozhidar.dryanovski@gmail.com>",
+  "main": "index.js",
+  "keywords": [],
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@eslint/js": "^9.4.0",
+    "@typescript-eslint/parser": "^7.13.0",
+    "eslint": ">= 9",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.34.2",
+    "globals": "^15.4.0",
+    "typescript-eslint": "^7.12.0",
+    "typescript-eslint-parser": "^22.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9"
+  },
+  "pnpm": {
+    "updateConfig": {
+      "ignoreDependencies": [
+        "eslint"
+      ]
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "format": "npx prettier . --write",
+    "format:check": "npx prettier . --check",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-eslint-plugin": "^6.1.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.7",
+    "prettier": "3.3.2",
+    "standard-version": "^9.5.0"
+  }
+}
